@@ -8,19 +8,25 @@ class HomeFeed extends StatelessWidget {
     return Row(
       children: [
         const SizedBox(
-          width: 35,
+          width: 20,
         ),
         Column(
           children: [
             const SizedBox(
               height: 25,
             ),
-            Image.asset(
-              'assets/feed1.png',
-              width: 370,
+            ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(10),
+                topRight: Radius.circular(10),
+              ),
+              child: Image.asset(
+                'assets/feed1.png',
+                width: 360,
+              ),
             ),
             Container(
-              width: 370,
+              width: 360,
               height: 155,
               color: const Color(0xFFD9D9D9),
               child: Column(
@@ -82,7 +88,7 @@ class HomeFeed extends StatelessWidget {
               ),
             ),
             Container(
-              width: 370,
+              width: 360,
               height: 80,
               decoration: const BoxDecoration(
                 color: Color.fromARGB(26, 133, 124, 124),
@@ -117,6 +123,9 @@ class HomeFeed extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        SizedBox(
+          width: 25,
         ),
       ],
     );
