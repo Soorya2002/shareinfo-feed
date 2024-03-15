@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 
 class TabText extends StatelessWidget {
   final String text;
+  final double size;
   final Color color;
-  const TabText({
-    super.key,
-    required this.text,
-    this.color = const Color(0xFF9F9F9F),
-  });
+  final FontWeight fontWeight;
+  const TabText(
+      {super.key,
+      required this.text,
+      this.color = const Color(0xFF9F9F9F),
+      this.size = 15,
+      this.fontWeight = FontWeight.w700});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +22,9 @@ class TabText extends StatelessWidget {
         Text(
           text,
           style: TextStyle(
-            fontSize: 15,
+            fontSize: size,
             color: color,
-            fontWeight: FontWeight.w700,
+            fontWeight: fontWeight,
           ),
         ),
         SizedBox(

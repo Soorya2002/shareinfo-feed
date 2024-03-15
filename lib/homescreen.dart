@@ -1,6 +1,6 @@
-import 'package:feeds/boxcontainer.dart';
-import 'package:feeds/groupcontainer.dart';
-import 'package:feeds/trendingfeed.dart';
+import 'package:feeds/widgets/boxcontainer.dart';
+import 'package:feeds/widgets/groupcontainer.dart';
+import 'package:feeds/widgets/trendingfeed.dart';
 import 'package:feeds/widgets/tabbar.dart';
 import 'package:flutter/material.dart';
 
